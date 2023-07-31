@@ -2,7 +2,7 @@ import React from "react";
 import dg from "../assets/dg.png";
 import fab1 from "../assets/fab1.png";
 import fab2 from "../assets/fab2.png";
-import teltik from "../assets/teltik.png";
+import tell from "../assets/teltik.png";
 import outdone from "../assets/outdone.png";
 import port from "../assets/port.png";
 
@@ -45,7 +45,7 @@ const projects = [
     name: "TelTik voice calling web app React",
     child: (
       <img
-        src={teltik}
+        src={tell}
         alt="hh"
         className="rounded-md mt-2 hover:scale-105 duration-200"
       />
