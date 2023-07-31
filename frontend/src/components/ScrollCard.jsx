@@ -40,28 +40,28 @@ const projects = [
       />
     ),
   },
-  {
-    id: 4,
-    name: "TelTik voice calling web app React",
-    child: (
-      <img
-        src={tell}
-        alt="hh"
-        className="rounded-md mt-2 hover:scale-105 duration-200"
-      />
-    ),
-  },
-  {
-    id: 5,
-    name: "Outdone.io React Js web App",
-    child: (
-      <img
-        src={outdone}
-        alt="hh"
-        className="rounded-md mt-2 hover:scale-105 duration-200"
-      />
-    ),
-  },
+  // {
+  //   id: 4,
+  //   name: "TelTik voice calling web app React",
+  //   child: (
+  //     <img
+  //       src={tell}
+  //       alt="hh"
+  //       className="rounded-md mt-2 hover:scale-105 duration-200"
+  //     />
+  //   ),
+  // },
+  // {
+  //   id: 5,
+  //   name: "Outdone.io React Js web App",
+  //   child: (
+  //     <img
+  //       src={outdone}
+  //       alt="hh"
+  //       className="rounded-md mt-2 hover:scale-105 duration-200"
+  //     />
+  //   ),
+  // },
   {
     id: 6,
     name: "MERN STACK Portfolio ",
