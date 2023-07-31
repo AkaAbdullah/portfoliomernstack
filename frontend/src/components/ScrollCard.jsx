@@ -80,7 +80,7 @@ export const ScrollCard = () => {
     <>
       {projects.map(({ id, name, child }) => (
         <div key={id} className=" rounded-lg border ">
-          <p className="text-center    ">{name}</p>
+          <p className="text-center">{name}</p>
           {child}
           <div className="flex items-center  justify-evenly">
             <button className="w-1/4 px-2 py-1 m-2 duration-200 hover:scale-105 bg-neutral-500 rounded-md hover:bg-neutral-800">
