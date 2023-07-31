@@ -53,7 +53,7 @@ const projects = [
   },
   {
     id: 5,
-    name: "Outdone.io React js web App",
+    name: "Outdone.io React Js web App",
     child: (
       <img
         src={outdone}
