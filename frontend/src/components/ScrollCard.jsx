@@ -1,19 +1,20 @@
 import React from "react";
-import chart from "../assets/chart.png";
-import main from "../assets/main.png";
-import dgs from "../assets/dg.png";
+import dg from "../assets/dg.png";
+import fab1 from "../assets/fab1.png";
+import fab2 from "../assets/fab2.png";
 import teltik from "../assets/teltik.png";
 import outdone from "../assets/outdone.png";
+import port from "../assets/port.png";
 
 const projects = [
   {
     id: 1,
-    name: "MERN STACK Order Managemnet Systems",
+    name: "Desert Game Studios MERN stack website",
     child: (
       <img
-        src={chart}
+        src={dg}
         alt="hh"
-        className="rounded-md hover:scale-105 duration-200 w-fit"
+        className="rounded-md hover:scale-105 duration-200 mt-2"
       />
     ),
   },
@@ -22,42 +23,53 @@ const projects = [
     name: "MERN STACK Order Managemnet Systems",
     child: (
       <img
-        src={main}
+        src={fab1}
         alt="hh"
-        className="rounded-md hover:scale-105 duration-200"
+        className="rounded-md  mt-2 hover:scale-105 duration-200"
       />
     ),
   },
   {
     id: 3,
-    name: "MERN STACK Order Managemnet Systems",
+    name: "Admin Dashboard MERN satck ",
     child: (
       <img
-        src={dgs}
+        src={fab2}
         alt="hh"
-        className="rounded-md hover:scale-105 duration-200"
+        className="rounded-md mt-2 hover:scale-105 duration-200"
       />
     ),
   },
   {
     id: 4,
-    name: "MERN STACK Order Managemnet Systems",
+    name: "TelTik voice calling web app React",
     child: (
       <img
         src={teltik}
         alt="hh"
-        className="rounded-md hover:scale-105 duration-200"
+        className="rounded-md mt-2 hover:scale-105 duration-200"
       />
     ),
   },
   {
     id: 5,
-    name: "MERN STACK Order Managemnet Systems",
+    name: "Outdone.io React js web app",
     child: (
       <img
         src={outdone}
         alt="hh"
-        className="rounded-md hover:scale-105 duration-200"
+        className="rounded-md mt-2 hover:scale-105 duration-200"
+      />
+    ),
+  },
+  {
+    id: 6,
+    name: "MERN STACK Portfolio ",
+    child: (
+      <img
+        src={port}
+        alt="hh"
+        className="    rounded-md mt-2 hover:scale-105  duration-200"
       />
     ),
   },
@@ -67,7 +79,8 @@ export const ScrollCard = () => {
   return (
     <>
       {projects.map(({ id, name, child }) => (
-        <div className="shadow-md shadow-gray-600 rounded-lg">
+        <div key={id} className=" rounded-lg border ">
+          <p className="text-center    ">{name}</p>
           {child}
           <div className="flex items-center  justify-evenly">
             <button className="w-1/4 px-2 py-1 m-2 duration-200 hover:scale-105 bg-neutral-500 rounded-md hover:bg-neutral-800">

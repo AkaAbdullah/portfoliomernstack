@@ -17,7 +17,7 @@ export const NavBar = () => {
     },
     {
       id: 4,
-      link: "Experience",
+      link: "Skills",
     },
     {
       id: 5,

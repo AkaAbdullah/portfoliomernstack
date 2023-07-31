@@ -4,6 +4,7 @@ import { About } from "./pages/About";
 import { AdminPage } from "./pages/AdminPage";
 import { LandingPage } from "./pages/LandingPage";
 import { Portfolio } from "./pages/Portfolio";
+import { SkillsPage } from "./pages/SkillsPage";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <LandingPage />
       <About />
       <Portfolio />
+      <SkillsPage />
       <SocialLinks />
     </section>
   );
