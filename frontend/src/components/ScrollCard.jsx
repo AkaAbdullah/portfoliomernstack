@@ -10,6 +10,8 @@ const projects = [
   {
     id: 1,
     name: "Desert Game Studios MERN stack website",
+    demo: "https://www.desertgamestudio.com/",
+    code: "https://github.com/AkaAbdullah/gamedesertfinal",
     child: (
       <img
         src={dg}
@@ -21,6 +23,8 @@ const projects = [
   {
     id: 2,
     name: "MERN STACK Order Managemnet Systems",
+    demo: "https://fabplexiv-2.netlify.app/login",
+    code: "https://github.com/AkaAbdullah/plexi2.0",
     child: (
       <img
         src={fab1}
@@ -32,6 +36,8 @@ const projects = [
   {
     id: 3,
     name: "Admin Dashboard MERN satck ",
+    demo: "https://fabplexiv-2.netlify.app/login",
+    code: "https://github.com/AkaAbdullah/plexi2.0",
     child: (
       <img
         src={fab2}
@@ -43,6 +49,8 @@ const projects = [
   {
     id: 4,
     name: "TelTik voice calling web app React",
+    demo: "https://teltik.com/",
+    code: "https://teltik.com/",
     child: (
       <img
         src={tell}
@@ -54,6 +62,8 @@ const projects = [
   {
     id: 5,
     name: "Outdone.io React Js web App",
+    demo: "https://www.outdone.io/",
+    code: "https://www.outdone.io/",
     child: (
       <img
         src={outdone}
@@ -65,6 +75,8 @@ const projects = [
   {
     id: 6,
     name: "MERN STACK Portfolio ",
+    demo: "https://abdulx.site/",
+    code: "https://github.com/AkaAbdullah/portfoliomernstack",
     child: (
       <img
         src={port}
@@ -78,17 +90,27 @@ const projects = [
 export const ScrollCard = () => {
   return (
     <>
-      {projects.map(({ id, name, child }) => (
+      {projects.map(({ id, name, child, demo, code }) => (
         <div key={id} className=" rounded-lg border ">
           <p className="text-center">{name}</p>
           {child}
           <div className="flex items-center  justify-evenly">
-            <button className="w-1/4 px-2 py-1 m-2 duration-200 hover:scale-105 bg-neutral-500 rounded-md hover:bg-neutral-800">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={demo}
+              className="w-1/4 text-center px-2 py-1 m-2 duration-200 hover:scale-105  bg-gradient-to-b from-slate-600  border to caret-yellow-200 rounded-md hover:bg-neutral-800"
+            >
               Demo
-            </button>
-            <button className="w-1/4 px-2 py-1 m-2 duration-200 hover:scale-105 bg-neutral-500 rounded-md hover:bg-neutral-800">
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={code}
+              className="w-1/4 px-2 py-1 text-center m-2 duration-200 hover:scale-105  bg-gradient-to-b from-slate-600 border to caret-yellow-200 rounded-md hover:bg-neutral-800"
+            >
               Code
-            </button>
+            </a>
           </div>
         </div>
       ))}
