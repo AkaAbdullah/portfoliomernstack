@@ -39,11 +39,10 @@ export const Footer = () => {
         <div className=" hidden md:flex flex-col items-center gap-3">
           <label className="text-xl  ">Subscribe to news letter</label>
           <input
-            autoFocus
             placeholder="email"
             className=" bg-transparent border rounded-sm focus:outline-none p-1"
           />
-          <button className="w-24 rounded-md h-8 bg-blue-700  ">
+          <button className="w-24 rounded-md h-6 bg-blue-700  ">
             Subscribe
           </button>
         </div>
