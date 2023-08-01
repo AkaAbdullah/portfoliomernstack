@@ -109,7 +109,7 @@ export const SkillsPage = () => {
   return (
     <>
       <section
-        name="skills"
+        name="Skills"
         className="w-full md:h-screen flex justify-center items-center flex-col  bg-neutral-900 text-white"
       >
         <div className="container mx-auto p-4 max-w-6xl ">

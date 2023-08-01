@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { BsFillPersonLinesFill, BsWhatsapp } from "react-icons/bs";
 import resume from "../assets/Resume.pdf";
 
 export const SocialLinks = () => {
@@ -12,7 +12,7 @@ export const SocialLinks = () => {
           Linked In <FaLinkedin size={30} />
         </>
       ),
-      href: "/",
+      href: "https://www.linkedin.com/in/syed-abdullah-hussain-a78106165/",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export const SocialLinks = () => {
           Github <FaGithub size={30} />
         </>
       ),
-      href: "/",
+      href: "https://github.com/AkaAbdullah",
     },
     {
       id: 3,
@@ -31,6 +31,15 @@ export const SocialLinks = () => {
         </>
       ),
       href: "mailto:akaabdullah@gmail.com",
+    },
+    {
+      id: 5,
+      child: (
+        <>
+          WhatsApp <BsWhatsapp size={30} />
+        </>
+      ),
+      href: "https://wa.me/923347155206",
     },
     {
       id: 4,

@@ -3,7 +3,7 @@ import React from "react";
 export const About = () => {
   return (
     <section
-      name="about"
+      name="About"
       className="w-full md:h-screen flex justify-center items-center  bg-neutral-900 text-white"
     >
       <div className="container mx-auto p-4 max-w-6xl ">

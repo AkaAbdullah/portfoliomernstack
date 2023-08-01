@@ -3,6 +3,8 @@ import dg from "../assets/dg.png";
 import fab1 from "../assets/fab1.png";
 import fab2 from "../assets/fab2.png";
 import port from "../assets/port.png";
+import outdone from "../assets/out.png";
+import tell from "../assets/tell.png";
 
 const projects = [
   {
@@ -38,28 +40,28 @@ const projects = [
       />
     ),
   },
-  // {
-  //   id: 4,
-  //   name: "TelTik voice calling web app React",
-  //   child: (
-  //     <img
-  //       src={tell}
-  //       alt="hh"
-  //       className="rounded-md mt-2 hover:scale-105 duration-200"
-  //     />
-  //   ),
-  // },
-  // {
-  //   id: 5,
-  //   name: "Outdone.io React Js web App",
-  //   child: (
-  //     <img
-  //       src={outdone}
-  //       alt="hh"
-  //       className="rounded-md mt-2 hover:scale-105 duration-200"
-  //     />
-  //   ),
-  // },
+  {
+    id: 4,
+    name: "TelTik voice calling web app React",
+    child: (
+      <img
+        src={tell}
+        alt="hh"
+        className="rounded-md mt-2 hover:scale-105 duration-200"
+      />
+    ),
+  },
+  {
+    id: 5,
+    name: "Outdone.io React Js web App",
+    child: (
+      <img
+        src={outdone}
+        alt="hh"
+        className="rounded-md mt-2 hover:scale-105 duration-200"
+      />
+    ),
+  },
   {
     id: 6,
     name: "MERN STACK Portfolio ",

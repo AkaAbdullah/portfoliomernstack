@@ -4,7 +4,7 @@ import { ScrollCard } from "../components/ScrollCard";
 export const Portfolio = () => {
   return (
     <section
-      name="portfolio"
+      name="Portfolio"
       className="w-full h-full flex justify-center bg-neutral-900 text-white "
     >
       <div className="container max-w-6xl mx-auto p-4 ">
