@@ -1,4 +1,5 @@
-import React from "react";
+import { useSelector } from "react-redux";
+
 import dg from "../assets/dg.png";
 import fab1 from "../assets/fab1.png";
 import fab2 from "../assets/fab2.png";
@@ -88,10 +89,12 @@ const projects = [
 ];
 
 export const ScrollCard = () => {
+  const { darkMode } = useSelector((state) => state.theme);
+
   return (
     <>
       {projects.map(({ id, name, child, demo, code }) => (
-        <div key={id} className=" rounded-lg border ">
+        <div key={id} className="  shadow-lg rounded-lg border ">
           <p className="text-center">{name}</p>
           {child}
           <div className="flex items-center  justify-evenly">
@@ -99,7 +102,11 @@ export const ScrollCard = () => {
               target="_blank"
               rel="noreferrer"
               href={demo}
-              className="w-1/4 text-center px-2 py-1 m-2 duration-200 hover:scale-105  bg-gradient-to-b from-slate-600  border to caret-yellow-200 rounded-md hover:bg-neutral-800"
+              className={`w-1/4 text-center px-2 py-1 m-2 duration-200 hover:scale-105 ${
+                darkMode
+                  ? "bg-gradient-to-b from-slate-600  border to caret-yellow-200 rounded-md hover:bg-neutral-800"
+                  : "bg-white text-black shadow-xl border rounded-md"
+              } `}
             >
               Demo
             </a>
@@ -107,7 +114,11 @@ export const ScrollCard = () => {
               target="_blank"
               rel="noreferrer"
               href={code}
-              className="w-1/4 px-2 py-1 text-center m-2 duration-200 hover:scale-105  bg-gradient-to-b from-slate-600 border to caret-yellow-200 rounded-md hover:bg-neutral-800"
+              className={`w-1/4 text-center px-2 py-1 m-2 duration-200 hover:scale-105 ${
+                darkMode
+                  ? "bg-gradient-to-b from-slate-600  border to caret-yellow-200 rounded-md hover:bg-neutral-800"
+                  : "bg-white text-black shadow-xl border rounded-md"
+              } `}
             >
               Code
             </a>

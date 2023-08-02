@@ -1,10 +1,17 @@
 import { BiRightArrow } from "react-icons/bi";
 import mypic from "../assets/profile.png";
 import resume from "../assets/Resume.pdf";
+import { useSelector } from "react-redux";
 export const LandingPage = () => {
+  const { darkMode } = useSelector((state) => state.theme);
   return (
     <>
-      <div name="Home" className="  h-screen bg-neutral-900 text-white  ">
+      <div
+        name="Home"
+        className={` h-screen ${
+          darkMode ? "bg-neutral-900 text-white" : "bg-white text-black"
+        }  `}
+      >
         <div className="container mx-auto z-10 max-w-6xl p-4 flex flex-col   items-center justify-center h-full md:flex-row ">
           <div className="flex  flex-col justify-center items-center md:items-start  md:h-full mt-10 md:mt-0  ">
             <h2 className=" text-2xl md:text-6xl   ">Hey, There I'm</h2>

@@ -1,12 +1,19 @@
 import { BsInstagram, BsYoutube } from "react-icons/bs";
 import { BiLogoFacebookSquare } from "react-icons/bi";
+import { useSelector } from "react-redux";
 
 export const Footer = () => {
+  const { darkMode } = useSelector((state) => state.theme);
+
   return (
-    <section className="bg-neutral-800 w-full h-36 md:h-56  shaow-xl text-white">
+    <section
+      className={` w-full h-36 md:h-56  shadow-inner ${
+        darkMode ? "text-white bg-neutral-800" : "bg-white text-black"
+      } `}
+    >
       <div className="container mx-auto max-w-6xl px-4 pt-7 md:py-0 ">
         <div className="flex items-center justify-center">
-          <h1 className="text-3xl text-center font-bold md:text-5xl py-2 ">
+          <h1 className="text-3xl text-center font-bold md:text-5xl md:py-10 ">
             ᗋbdullah Hussain<span className="text-xs"> &copy;</span>
           </h1>
         </div>
@@ -35,16 +42,6 @@ export const Footer = () => {
           >
             <BsYoutube size={30} color="red" />
           </a>
-        </div>
-        <div className=" hidden md:flex flex-col items-center gap-3">
-          <label className="text-xl  ">Subscribe to news letter</label>
-          <input
-            placeholder="email"
-            className=" bg-transparent border rounded-sm focus:outline-none p-1"
-          />
-          <button className="w-24 rounded-md h-6 bg-blue-700  ">
-            Subscribe
-          </button>
         </div>
       </div>
     </section>

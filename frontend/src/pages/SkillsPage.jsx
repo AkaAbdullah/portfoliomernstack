@@ -8,7 +8,8 @@ import {
 } from "react-icons/bi";
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaNode } from "react-icons/fa";
-import { SiBulma, SiExpress, SiNextdotjs, SiFramer } from "react-icons/si";
+import { SiNextdotjs, SiFramer } from "react-icons/si";
+import { useSelector } from "react-redux";
 
 const skills = [
   {
@@ -106,11 +107,15 @@ const skills = [
 ];
 
 export const SkillsPage = () => {
+  const { darkMode } = useSelector((state) => state.theme);
+
   return (
     <>
       <section
         name="Skills"
-        className="w-full md:h-screen flex justify-center items-center flex-col  bg-neutral-900 text-white"
+        className={`w-full md:h-screen flex justify-center items-center flex-col ${
+          darkMode ? "bg-neutral-900 text-white " : "bg-white text-black"
+        }  `}
       >
         <div className="container mx-auto p-4 max-w-6xl ">
           <div className=" flex md:flex-col md:items-start items-center justify-center mt-10 mb-5 ">

@@ -1,3 +1,5 @@
+import { useSelector } from "react-redux";
+
 const jobs = [
   {
     id: 1,
@@ -31,10 +33,14 @@ const jobs = [
 ];
 
 export const ExperiencePage = () => {
+  const { darkMode } = useSelector((state) => state.theme);
+
   return (
     <section
       name="Experience"
-      className="w-full  bg-neutral-900 text-white h-full md:h-screen flex flex-col justify-center items-center gap-10  "
+      className={`w-full   h-full md:h-screen flex flex-col justify-center items-center gap-10  ${
+        darkMode ? "bg-neutral-900 text-white" : "bg-white text-black"
+      } `}
     >
       <div className="container mx-auto max-w-6xl p-4  text-center md:text-start">
         <p className="text-5xl  underline md:text-6xl ">Experience</p>
@@ -43,7 +49,9 @@ export const ExperiencePage = () => {
         {jobs.map(({ id, title, description, duration, details, location }) => (
           <div
             key={id}
-            className="  w-[270px] h-52  bg-neutral-800  rounded-lg text-center shadow-lg overflow-hidden mb-10 md:w-[310px]   hover:scale-105 duration-200   "
+            className={` w-[270px] h-52  ${
+              darkMode ? "bg-neutral-800 " : "bg-white"
+            } rounded-lg text-center shadow-lg overflow-hidden mb-10 md:w-[310px]   hover:scale-105 duration-200`}
           >
             <div className="flex flex-col items-center justify-center  h-full ">
               <p className="text-xl font-bold bg-blue-700 w-full ">{title}</p>

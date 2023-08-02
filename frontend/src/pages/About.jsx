@@ -1,10 +1,13 @@
-import React from "react";
+import { useSelector } from "react-redux";
 
 export const About = () => {
+  const { darkMode } = useSelector((state) => state.theme);
   return (
     <section
       name="About"
-      className="w-full md:h-screen flex justify-center items-center  bg-neutral-900 text-white"
+      className={`w-full md:h-screen flex justify-center items-center ${
+        darkMode ? "bg-neutral-900 text-white" : "bg-white text-black"
+      } `}
     >
       <div className="container mx-auto p-4 max-w-6xl ">
         <div className=" flex md:flex-col md:items-start items-center justify-center mt-10 mb-5 ">
