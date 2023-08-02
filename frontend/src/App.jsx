@@ -1,27 +1,23 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import { Footer } from "./components/Footer";
 import { NavBar } from "./components/Navbar";
-import { SocialLinks } from "./components/SocialLinks";
-import { About } from "./pages/About";
-// import { AdminPage } from "./pages/AdminPage";
-import { ContactPage } from "./pages/ContactPage";
-import { ExperiencePage } from "./pages/ExperiencePage";
-import { LandingPage } from "./pages/LandingPage";
-import { Portfolio } from "./pages/Portfolio";
-import { SkillsPage } from "./pages/SkillsPage";
+
+import { LoginPage } from "./pages/LoginPage";
+import { MainPage } from "./pages/MainPage";
+import { AdminPage } from "./pages/AdminPage";
 
 function App() {
   return (
-    <section>
+    <BrowserRouter>
       <NavBar />
-      <LandingPage />
-      <About />
-      <Portfolio />
-      <SkillsPage />
-      <ExperiencePage />
-      <ContactPage />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/admin" element={<AdminPage />} />
+      </Routes>
       <Footer />
-      <SocialLinks />
-    </section>
+    </BrowserRouter>
   );
 }
 
