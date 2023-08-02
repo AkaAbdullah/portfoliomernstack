@@ -20,6 +20,7 @@ export const ContactPage = () => {
 
         <div className=" md:flex md:justify-center md:items-center">
           <form
+            netlify
             className="flex flex-col  gap-3 md:px-0 px-4"
             action="https://getform.io/f/b57cd43f-9ff6-4b25-91fa-108764b79263"
             method="POST"
