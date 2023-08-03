@@ -119,7 +119,7 @@ export const SkillsPage = () => {
       >
         <div className="container mx-auto p-4 max-w-6xl ">
           <div className=" flex md:flex-col md:items-start items-center justify-center mt-10 mb-5 ">
-            <p className="text-6xl md:text-7xl underline ">Skills</p>
+            <p className="text-6xl md:text-7xl underline ">Skills </p>
           </div>
           <p className="text-sm md:text-xl text-center md:text-start ">
             Following are some of the Technologies I Love to work with including

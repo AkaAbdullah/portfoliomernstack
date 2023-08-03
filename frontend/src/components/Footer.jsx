@@ -1,6 +1,7 @@
 import { BsInstagram, BsYoutube } from "react-icons/bs";
 import { BiLogoFacebookSquare } from "react-icons/bi";
 import { useSelector } from "react-redux";
+import { FaLinkedin } from "react-icons/fa";
 
 export const Footer = () => {
   const { darkMode } = useSelector((state) => state.theme);
@@ -18,6 +19,14 @@ export const Footer = () => {
           </h1>
         </div>
         <div className=" flex gap-5 items-center justify-center mt-2 mb-2 w-full ">
+          <a
+            className="hover:scale-150  duration-200"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/syed-abdullah-hussain-a78106165/"
+          >
+            <FaLinkedin size={30} color="blue" />
+          </a>
           <a
             className="hover:scale-150  duration-200"
             target="_blank"

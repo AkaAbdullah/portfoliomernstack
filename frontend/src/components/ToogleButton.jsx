@@ -19,7 +19,7 @@ export const ToogleButton = () => {
     >
       <div
         onClick={handleToggleMode}
-        className=" bg-green-600  drop-shadow-lg rounded-full w-6 h-6  transition-all duration-500 "
+        className=" bg-yellow-500  drop-shadow-lg rounded-full w-6 h-6  transition-all duration-500 "
       ></div>
     </div>
   );

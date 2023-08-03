@@ -24,8 +24,8 @@ export const LandingPage = () => {
             <hr />
             <p className="">
               Born in Vehari Lives in Lahore Raised in 90's now avalible for you
-              I've spent the last 1 year building and scaling software for some
-              pretty cool companies. yes, and this website is not a downloaded
+              I've spent the last 2 year building and scaling software for some
+              pretty cool companies. and this website is not a downloaded
               template 😎
             </p>
             <div>
