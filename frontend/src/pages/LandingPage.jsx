@@ -1,6 +1,6 @@
 import { BiRightArrow } from "react-icons/bi";
 import mypic from "../assets/profile.png";
-import resume from "../assets/Resume.pdf";
+import resume from "../assets/Resume-Abdullah-Hussain.pdf";
 import { useSelector } from "react-redux";
 export const LandingPage = () => {
   const { darkMode } = useSelector((state) => state.theme);

@@ -1,8 +1,8 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill, BsWhatsapp } from "react-icons/bs";
-import resume from "../assets/Resume.pdf";
 
+import resume from "../assets/Resume-Abdullah-Hussain.pdf";
 export const SocialLinks = () => {
   const links = [
     {
