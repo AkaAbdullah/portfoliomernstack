@@ -12,7 +12,7 @@ export const LandingPage = () => {
           darkMode ? "bg-neutral-900 text-white" : "bg-white text-black"
         }  `}
       >
-        <div className="container mx-auto z-10 max-w-6xl p-4 flex flex-col   items-center justify-center h-full md:flex-row ">
+        <div className="container mx-auto z-10 max-w-6xl p-4 flex flex-col gap-3   items-center justify-center h-full md:flex-row ">
           <div className="flex  flex-col justify-center items-center md:items-start  md:h-full mt-10 md:mt-0  ">
             <h2 className=" text-2xl md:text-6xl   ">Hey, There I'm</h2>
             <h1 className=" text-4xl md:text-7xl font-medium text-bold ">
@@ -24,7 +24,7 @@ export const LandingPage = () => {
             <hr />
             <p className="">
               Born in Vehari Lives in Lahore Raised in 90's now avalible for you
-              I've spent the last 2 year building and scaling software for some
+              I've spent the last 3 year building and scaling software for some
               pretty cool companies. and this website is not a downloaded
               template 😎
             </p>
