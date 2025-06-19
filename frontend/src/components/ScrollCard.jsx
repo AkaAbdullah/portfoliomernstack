@@ -13,6 +13,8 @@ import scripid from "../assets/scripid.png";
 import workforu from "../assets/work4u.png";
 import bank from "../assets/bank.png";
 import loginWork from "../assets/login.png";
+import eres from "../assets/eres.png";
+import welfare from "../assets/wellfareSermon.png";
 
 const projects = [
   {
@@ -105,6 +107,22 @@ const projects = [
     demo: "https://logintomywork.vercel.app/",
     code: "https://github.com/AkaAbdullah/portfoliomernstack",
     image: loginWork,
+    description: "",
+  },
+  {
+    id: 12,
+    name: "ERES Compliance Management System MERN Stack",
+    demo: "https://technion-frontend.pages.dev/",
+    code: "https://github.com/AkaAbdullah/portfoliomernstack",
+    image: eres,
+    description: "",
+  },
+  {
+    id: 13,
+    name: "Wellfare Sermon Wordpress",
+    demo: "https://thewelfaresermon.org/",
+    code: "https://github.com/AkaAbdullah/portfoliomernstack",
+    image: eres,
     description: "",
   },
 ];
