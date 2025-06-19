@@ -122,7 +122,7 @@ const projects = [
     name: "Wellfare Sermon Wordpress",
     demo: "https://thewelfaresermon.org/",
     code: "https://github.com/AkaAbdullah/portfoliomernstack",
-    image: eres,
+    image: welfare,
     description: "",
   },
 ];
